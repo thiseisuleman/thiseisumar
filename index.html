@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+5hb5g5dY5u4W5Q0RA5D7fO6K5nZqZqf5u5F5QE" crossorigin="anonymous">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">iamin</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    
+                </ul>
+                
+
+            </div>
+        </nav>
+    </header>
+    <main id="home">
+        <div class="center-section">
+            Web dev enthusiast: <br><span class="color">Mohammd Umar Wajid Khan</span><br> i am
+            <span id="element"></span>
+        </div>
+    </main>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="u.png" class="about-img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Mohammad Umar Wajid Khan: A passionate and visionary web developer whose dedication to innovation
+                        is reflected in every line of code he writes. Umar’s expertise stretches from the intricacies of
+                        frontend development to the robustness of backend solutions. His flair for web development is
+                        matched by his love for literature, particularly evident in his poignant and heartfelt shayari.
+                        The author of "Naasamajh Ishq," Umar combines technical proficiency with a deep understanding of
+                        human emotions, creating digital experiences and literary works that resonate profoundly.
+                        Whether he's coding the next big app or penning the next captivating verse, Mohammad Umar Wajid
+                        Khan is driven by a relentless pursuit of excellence and creativity.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Frontend Development:</span><br>HTML, CSS for creating dynamic and responsive web
+                                interfaces.</li>
+                            <li><span>Backend Development:</span><br>Expertise in Python for developing robust
+                                server-side applications.</li>
+                            <li><span>Content Management:</span><br>Skilled in managing and updating content on personal
+                                websites.</li>
+                            <li><span>Web Development: </span><br>Proven experience in creating and maintaining
+                                professional websites, including:
+                            </li>
+                        </ul>
+                        <ol>
+                            <li><strong>Technology Info Site:</strong> Providing insightful content and updates on the
+                                latest in technology.</li>
+                            <li><strong>Shayari Site:</strong> Showcasing original shayari and poetry, blending
+                                technical expertise with creative expression.</li>
+                        </ol>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Schooling:</span><br>Completed formative education in Mumbai and Kushinagar
+                                <br>building a strong academic foundation and <br>nurturing a lifelong passion for
+                                learning.
+                            </li>
+                            <li><span>Bachelor of Computer Applications (BCA):</span><br> Currently pursuing at Integral
+                                University, Lucknow. <br>Selected BCA to align with a deep-seated interest in computers
+                                and technology that began at age 7. <br>Aiming to become a proficient software
+                                developer,<br> with a keen interest in the latest technological advancements.</li>
+                            <strong>Certification:</strong>
+                            <ol>
+                                <li>Introduction to HTML</li>
+                                <li>Basics of Python</li>
+                            </ol>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </div>
+    </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-links");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>web developer</i>', '<i>blogger</i>', '<i>writter</i>'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
